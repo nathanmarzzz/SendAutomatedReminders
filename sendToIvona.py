@@ -1,6 +1,9 @@
+#! /usr/local/bin/python3
 '''
 This is to send ivona automated messages throughout the day to eat and drink water 
 The message will be customized by the time of day and sent through jenkins 
+
+NOTE: maybe a despair message for like 2/3a vibes
 '''
 
 from py_imessage import imessage
@@ -24,7 +27,7 @@ def send_to_ivona():
     lunch_message = "Don't forget to eat lunch today"
     dinner_message = "Don't forget to have some dinner today"
 
-    hydration_is_key = "drink some water, hydration is key :)"
+    hydration_is_key = "drink some water. Hydration is key :)"
 
     # get time of day
     timeOfDay = datetime.now().strftime("%H:%M")
