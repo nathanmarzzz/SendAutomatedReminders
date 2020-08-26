@@ -15,7 +15,7 @@ def send_to_ivona():
     # messages by day
     # phone to send to
     phone_number = "4086809977"
-    testing_phone = "4085109943"
+    # testing_phone = "4085109943"
 
     # variables to be used for meals of the day
     lunch = "13"
@@ -48,11 +48,14 @@ def send_to_ivona():
         message_to_Send += dinner_message + "\n and " + hydration_is_key + " I love you and if I don't see you today sending all my love and hugs"
     
 
-
+    print('sending to: ', phone_number)
     print('sending: ',message_to_Send)    
     
     try:
-        guid = imessage.send(phone_number, message_to_Send)
+        # guid = imessage.send(phone_number, message_to_Send)
+        imessage.send(phone_number, message_to_Send)
+        print('SUCCESS: messages sent')
+
         
 
         # sleep(5)
