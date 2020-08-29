@@ -54,14 +54,11 @@ def send_to_ivona():
 
     print('sending to: ', phone_number)
     print('sending: ',message_to_Send)
-    exit()
     
     try:
         # guid = imessage.send(phone_number, message_to_Send)
         imessage.send(phone_number, message_to_Send)
         print('SUCCESS: messages sent')
-
-        
 
         # sleep(5)
         # resp = imessage.status(guid)
