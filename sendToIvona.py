@@ -27,6 +27,10 @@ def send_to_ivona():
     lunch_message = "Don't forget to eat lunch today"
     dinner_message = "Don't forget to have some dinner today"
 
+    # message for late nights 
+    late_nights = "I'm probably asleep by now bug, but here are a few reminders: don't be too hard on yourself, you're wonderful, beautiful and very capable. sleep well and sweet dreams <3 "
+
+
     hydration_is_key = "drink some water. Hydration is key :)"
 
     # get time of day
@@ -34,7 +38,6 @@ def send_to_ivona():
     print("time of day: ", timeOfDay)
 
     hour = timeOfDay.split(':')[0]
-
 
     # get message to send 
     # and add reminders for the day based on the time of day it is :)
@@ -44,12 +47,14 @@ def send_to_ivona():
         message_to_Send += breakfast_message + "\n and " + hydration_is_key + " I love you and if I don't see you today sending all my love and hugs"
     elif hour >= lunch and hour <= dinner:
         message_to_Send += lunch_message + "\n and " + hydration_is_key + " I love you and if I don't see you today sending all my love and hugs"
-    else:
+    elif hour > dinner and hour <= "12":
         message_to_Send += dinner_message + "\n and " + hydration_is_key + " I love you and if I don't see you today sending all my love and hugs"
-    
+    else:
+        message_to_Send = late_nights
 
     print('sending to: ', phone_number)
-    print('sending: ',message_to_Send)    
+    print('sending: ',message_to_Send)
+    exit()
     
     try:
         # guid = imessage.send(phone_number, message_to_Send)
