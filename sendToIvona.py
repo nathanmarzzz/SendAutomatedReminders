@@ -38,13 +38,14 @@ def send_to_ivona():
     print("time of day: ", timeOfDay)
 
     hour = timeOfDay.split(':')[0]
-
+    # print(hour)
+    # exit()
     # get message to send 
     # and add reminders for the day based on the time of day it is :)
     message_to_Send = "REMINDER: It is: " + timeOfDay +". I know time doesn't make sense and it's ok to loose track of time. \n"
 
-    if hour > "9" and hour < lunch:
-        message_to_Send += breakfast_message + "\n and " + hydration_is_key + " I love you and if I don't see you today sending all my love and hugs"
+    if hour > "09" and hour < lunch:
+        message_to_Send += breakfast_message + "\n and " + hydration_is_key + " I love you and if I don't see you today sending all my love and hugs. Don't forget to write down your dreams, so you can tell me about them :')"
     elif hour >= lunch and hour < dinner:
         message_to_Send += lunch_message + "\n and " + hydration_is_key + " I love you and if I don't see you today sending all my love and hugs"
     elif hour > dinner and hour < "23":
