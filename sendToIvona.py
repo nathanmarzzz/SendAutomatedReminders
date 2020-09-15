@@ -29,7 +29,7 @@ def send_to_ivona():
 
     # message for late nights
     late_nights = "I'm probably asleep by now bug, but here are a few reminders: don't be too hard on yourself, you're wonderful, beautiful and very capable. sleep well and sweet dreams <3 "
-    anxiety = "I know the past couple weeks have been really hard to get through and it doesn't feel like it right now, but you're safe, you're ok, this will end. I love you so much and I hope you always feel like you're flying on appa with warm winds and beautiful views. Sleep well and sweet dreams bug <3 "
+    anxiety = "I know the past couple weeks have been really hard to get through and it doesn't feel like it right now, but you're safe, you're ok, and this will end. I love you so much and I hope you always feel like you're flying on appa with warm winds and beautiful views. Sleep well and sweet dreams bug <3 "
 
     hydration_is_key = "drink some water. Hydration is key :)"
 
